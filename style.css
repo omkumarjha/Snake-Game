@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../bg.jpg");
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    width: 40vw;
+    height: 85vh;
+    background: linear-gradient(rgb(65, 179, 65),rgb(252, 252, 81));
+    border: 3px solid black;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+#scoreBox{
+    position: absolute;
+    top: 45px;
+    right: 200px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+#highScoreBox{
+    position: absolute;
+    top: 90px;
+    right: 160px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+}
+.head{
+    background: linear-gradient(brown,yellow);
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.tail{
+    background: linear-gradient(red,green);
+    border: 3px solid black;
+    border-radius: 8px;
+}
+.food{
+    background: linear-gradient(black,blue);
+    border: 3px solid black;
+    border-radius: 4px;
+}
